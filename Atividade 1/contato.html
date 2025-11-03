@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Brasil | Contato e Transparência</title>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Conecta Brasil</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li> 
+                    <li><a href="como-ajudar.html">Como Ajudar</a></li>
+                    <li><a href="contato.html">Contato</a></li> 
+                    <li><a href="voluntario.html">Seja Um Voluntario</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="fale-conosco">
+            <h2>📞 Fale Conosco</h2>
+            
+            <h3>Informações Gerais</h3>
+            <p>E-mail: contato@conectabrasil.org.br</p>
+            <p>Telefone: (66) 4002-1542</p>
+            <p>Endereço da Sede: Rua treze de maio, 101 - Centro Digital - [Rondonópolis/MT]</p>
+            
+            <h3>Formulário Rápido</h3>
+            <form action="/enviar-contato" method="POST">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+                
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <hr>
+        
+        <section id="transparencia">
+            <h2>📈 Transparência e Prestação de Contas</h2>
+            <p>Acreditamos na gestão aberta. Acesse nossos documentos e veja onde seus recursos são aplicados.</p>
+            
+            <ul>
+                <li><a href="/relatorio-2024.pdf" target="_blank">Relatório Anual de Atividades (2024)</a></li>
+                <li><a href="/balanco-financeiro.pdf" target="_blank">Balanço Financeiro Auditado</a></li>
+                <li><a href="/impacto.pdf" target="_blank">Mapa de Impacto e Metas (Gráficos)</a></li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>© 2025 Conecta Brasil.</p>
+        </footer>
+    </div>
+</body>
+</html>

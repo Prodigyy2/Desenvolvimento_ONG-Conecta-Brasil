@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Brasil | Seja Um Voluntário</title>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Conecta Brasil</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li> 
+                    <li><a href="como-ajudar.html">Como Ajudar</a></li>
+                    <li><a href="contato.html">Contato</a></li> 
+                    <li><a href="voluntario.html">Seja Um Voluntário</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="form-voluntario">
+            <h2>🧡 Formulário de Inscrição para Voluntários</h2>
+            <p>Seu tempo e conhecimento são inestimáveis! Preencha o formulário abaixo com atenção. Seus dados são tratados com total sigilo e são essenciais para definirmos a melhor forma de colaboração.</p>
+
+            <form action="/processar-inscricao-voluntario" method="POST">
+                
+                <hr>
+
+                <h3>1. Dados de Registro (Obrigatório)</h3>
+
+                <label for="nome_voluntario">Nome Completo:</label><br>
+                <input type="text" id="nome_voluntario" name="nome_voluntario" required><br><br>
+                
+                <label for="cpf_voluntario">CPF:</label><br>
+                <input type="text" id="cpf_voluntario" name="cpf_voluntario" maxlength="14" placeholder="XXX.XXX.XXX-XX" required><br><br>
+
+                <label for="data_nascimento_voluntario">Data de Nascimento:</label><br>
+                <input type="date" id="data_nascimento_voluntario" name="data_nascimento_voluntario" required><br><br>
+
+                <label for="profissao">Profissão / Área de Formação (Opcional):</label><br>
+                <input type="text" id="profissao" name="profissao"><br><br>
+
+                <hr>
+
+                <h3>2. Contato e Endereço</h3>
+
+                <label for="email_voluntario">E-mail Principal:</label><br>
+                <input type="email" id="email_voluntario" name="email_voluntario" required><br><br>
+                
+                <label for="telefone_voluntario">Telefone para Contato (WhatsApp):</label><br>
+                <input type="tel" id="telefone_voluntario" name="telefone_voluntario" maxlength="15" placeholder="(XX) XXXXX-XXXX" required><br><br>
+                
+                <label for="rede_social_voluntario">Link da Rede Social Profissional (Ex: LinkedIn/Lattes - Opcional):</label><br>
+                <input type="url" id="rede_social_voluntario" name="rede_social_voluntario" placeholder="https://www.linkedin.com/in/seu-perfil"><br><br>
+
+                <label for="cep_voluntario">CEP:</label><br>
+                <input type="text" id="cep_voluntario" name="cep_voluntario" maxlength="9" placeholder="XXXXX-XXX" required><br><br>
+
+                <hr>
+                
+                <h3>3. Disponibilidade e Área de Interesse</h3>
+
+                <label for="periodo_disponivel">Período Disponível para Colaboração:</label><br>
+                <select id="periodo_disponivel" name="periodo_disponivel" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                    <option value="">-- Selecione a Frequência --</option>
+                    <option value="semanal">Semanal (Horários Fixos)</option>
+                    <option value="mensal">Mensal (Projetos Específicos)</option>
+                    <option value="ocasional">Ocasional (Eventos/Demandas Pontuais)</option>
+                </select><br><br>
+
+                <p>Em qual área você tem maior interesse em atuar? (Selecione um ou mais):</p>
+                
+                <input type="checkbox" id="area_manutencao" name="area_interesse[]" value="Manutencao">
+                <label for="area_manutencao"> Manutenção e Recondicionamento de Equipamentos</label><br>
+
+                <input type="checkbox" id="area_aulas" name="area_interesse[]" value="Aulas">
+                <label for="area_aulas"> Ministrar Aulas/Oficinas de Letramento Digital</label><br>
+
+                <input type="checkbox" id="area_logistica" name="area_interesse[]" value="Logistica">
+                <label for="area_logistica"> Logística e Distribuição (Coleta/Entrega)</label><br>
+
+                <input type="checkbox" id="area_admin" name="area_interesse[]" value="Administrativo">
+                <label for="area_admin"> Suporte Administrativo e Captação de Recursos</label><br>
+
+                <input type="checkbox" id="area_outros" name="area_interesse[]" value="Outros">
+                <label for="area_outros"> Outras Habilidades (Especificar em "Observações")</label><br><br>
+                <label for="observacoes">Observações / Habilidades Adicionais:</label><br>
+                <textarea id="observacoes" name="observacoes" rows="4" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"></textarea><br><br>
+
+                <hr>
+                
+                <input type="submit" value="PROSSEGUIR COM MINHA INSCRIÇÃO" style="background-color: #ff6600; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                </form>
+            
+            <p><small>Ao prosseguir, você concorda que o Conecta Brasil poderá entrar em contato via e-mail ou telefone para dar seguimento à sua inscrição.</small></p>
+
+        </section>
+
+        <footer>
+            <p>Dúvidas? <a href="contato.html">Entre em Contato</a></p>
+            <p><small>© 2025 Conecta Brasil. | Todos os direitos reservados.</small></p>
+        </footer>
+    </div>
+</body>
+</html>
