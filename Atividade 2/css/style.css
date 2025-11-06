@@ -1,0 +1,193 @@
+/* -----------------------------------------------------------------
+    Estilos de Layout e Centralização
+----------------------------------------------------------------- */
+body {
+    background-image: url('../imagens/background.jpg'); /* Sair de 'css' e entrar em 'imagens' */
+    background-size: cover; /* Faz a imagem cobrir toda a área, cortando se necessário */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da viewport */
+    margin: 0; /* Remove a margem padrão do body */
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+}
+
+.banner-image {
+    width: 600px; /* Ou o tamanho que desejar, por exemplo, 600px */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Para remover qualquer espaço extra abaixo da imagem */
+    margin: 0 auto; /* Para centralizar a imagem se ela for menor que o elemento pai */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu container */
+}
+
+/* Container principal para a centralização e a "box" */
+.container {
+    max-width: 800px; /* Largura máxima para o conteúdo */
+    margin: 20px auto; /* Centraliza o bloco horizontalmente e adiciona margem superior/inferior */
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco para a área de conteúdo */
+    border: 1px solid #ddd; /* Borda simples para criar a "box" visual */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+header {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* -----------------------------------------------------------------
+    Estilos de Formulário e Tabela
+----------------------------------------------------------------- */
+
+form {
+    padding: 15px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="date"], 
+input[type="tel"],
+input[type="number"],
+textarea,
+select { /* Adicionado o 'select' para formulários futuros */
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos no width */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #eee;
+    vertical-align: middle;
+}
+
+/* -----------------------------------------------------------------
+    Estilos dos Botões GERAIS
+----------------------------------------------------------------- */
+
+button, button[type="submit"] {
+    background-color: #0066cc; /* Cor primária */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, button[type="submit"]:hover {
+    background-color: #005bb5; /* Cor um pouco mais escura no hover */
+}
+
+/* Estilo específico para o botão de voluntariado na página de ajuda (verde) */
+#voluntariado button {
+    background-color: #28a745;
+}
+
+#voluntariado button:hover {
+    background-color: #218838;
+}
+
+/* -----------------------------------------------------------------
+   Estilos Específicos Adicionados (Botões de Doação e Voluntário/Contato)
+----------------------------------------------------------------- */
+.btn-doar { 
+    background-color: #ff9900; /* Laranja para Doação (Diferente do Azul primário) */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-doar:hover {
+    background-color: #cc7a00;
+}
+
+.btn-enviar-dados {
+    background-color: #6c757d; /* Cinza para Registro Opcional */
+}
+.btn-enviar-dados:hover {
+    background-color: #5a6268;
+}
+
+/* Estilo do botão de submissão do formulário de voluntariado */
+.btn-voluntario-submit {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voluntario-submit:hover {
+    background-color: #218838; /* Verde mais escuro no hover */
+}
+
+/* Estilo do botão de Contato (Azul) */
+.btn-contato-submit {
+    background-color: #0066cc; 
+    padding: 12px 25px;
+}
+.btn-contato-submit:hover {
+    background-color: #004d99;
+}
+
+/* Garante que o textarea use a largura total do container no formulário de voluntário */
+#form-voluntario textarea {
+    width: 100%; 
+    max-width: 100%;
+}
+
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    color: #777;
+}
