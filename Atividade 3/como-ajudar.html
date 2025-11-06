@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Brasil | Como Ajudar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Conecta Brasil</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li> 
+                    <li><a href="como-ajudar.html">Como Ajudar</a></li>
+                    <li><a href="contato.html">Contato</a></li> 
+                    <li><a href="voluntario.html">Seja Um Voluntario</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="doacao-financeira">
+            <h2>💖 DOE AGORA: Sua Ajuda Conecta Pessoas.</h2>
+            <p>Seja o elo que conecta sonhos à tecnologia. Contribua com o valor que toca seu coração. Sua doação é simples, segura e não exige cadastro.</p>
+
+            <hr>
+            
+            <form action="/processar-pagamento" method="POST">
+                
+                <h3>Escolha o Valor da Doação</h3>
+
+                <p>Veja o que podemos realizar com sua ajuda:</p>
+
+                <div class="opcoes-doacao">
+                    <input type="radio" id="valor-50" name="valor_doacao" value="50" required>
+                    <label for="valor-50">R$ 50 &ndash; Custeia 1 kit didático.</label><br>
+
+                    <input type="radio" id="valor-150" name="valor_doacao" value="150">
+                    <label for="valor-150">R$ 150 &ndash; Garante a manutenção de 1 computador.</label><br>
+
+                    <input type="radio" id="valor-300" name="valor_doacao" value="300">
+                    <label for="valor-300">R$ 300 &ndash; Patrocina 1 aluno em um curso básico.</label><br>
+
+                    <div style="margin-top: 15px;">
+                        <input type="radio" id="outro-valor-radio" name="valor_doacao" value="outro">
+                        <label for="outro-valor-radio">Outro Valor (Mínimo R$ 10):</label>
+                        <input type="number" id="outro-valor-input" name="valor_personalizado" placeholder="R$" min="10" style="width: 100px;"> 
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-doar">Prosseguir para Pagamento</button>
+
+            </form>
+            
+            <hr>
+            
+            <section id="dados-opcionais" style="margin-top: 30px;">
+                <h3>Registro Opcional (Para Recibo e Contato)</h3>
+                <p>Se você deseja receber um recibo fiscal ou autorizar nosso contato, preencha as informações a seguir (não obrigatório para a doação).</p>
+                
+                <form action="/registrar-dados-doador" method="POST">
+                    <label for="nome_opcional">Nome Completo:</label><br>
+                    <input type="text" id="nome_opcional" name="nome_opcional"><br><br>
+                    
+                    <label for="email_opcional">E-mail para Recibo:</label><br>
+                    <input type="email" id="email_opcional" name="email_opcional"><br><br>
+                    
+                    <label for="cep_opcional">CEP (Opcional):</label><br>
+                    <input type="text" id="cep_opcional" name="cep_opcional" maxlength="9" placeholder="XXXXX-XXX"><br><br>
+                    
+                    <button type="submit" class="btn-enviar-dados">Enviar Dados para Contato/Recibo</button>
+                </form>
+            </section>
+        </section>
+
+        <hr>
+        
+        <section id="voluntariado">
+            <h2>🤝 Compartilhe Seu Tempo e Conhecimento</h2>
+            <p>O impacto da Conecta Brasil vai além do dinheiro. Compartilhe seu conhecimento. Temos vagas para:</p>
+            
+            <ul>
+                
+                <li>Instrutores de Informática: Ministrar cursos básicos e avançados.</li>
+                <li>Técnicos em Manutenção: Recondicionar e preparar equipamentos doados.</li>
+                <li>Apoio Administrativo: Auxiliar na organização e logística dos projetos.</li>
+            </ul>
+            
+            <a href="voluntario.html" class="cta-button">Inscreva-se Já!</a>
+        </section>
+
+        <hr>
+        
+        <footer>
+            <p>Dúvidas sobre como a sua doação é utilizada? <a href="contato.html">Entre em Contato</a></p>
+            <p><small>© 2025 Conecta Brasil. | Todos os direitos reservados.</small></p>
+        </footer>
+    <footer>
+            </footer>
+
+        <div id="demo-modal" class="demo-modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeDemoModal()">&times;</span>
+                <h3>🎉 Sucesso (Simulado)!</h3>
+                <p>Obrigado por testar as funcionalidades interativas. Esta ação de envio foi interceptada com sucesso.</p>
+                <p>Lembre-se: todo o site é apenas uma **demonstração para um projeto da faculdade** e não realiza nenhuma ação real de pagamento ou registro.</p>
+                <p>Seus dados não foram enviados a nenhum servidor. Agradecemos sua colaboração!</p>
+                <button class="modal-close-btn" onclick="closeDemoModal()">Entendido</button>
+            </div>
+        </div>
+        </div>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
